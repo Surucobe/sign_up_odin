@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+}
+
+/* TODO: averiguar como alejar la imagen */
+.splash-bg{
+  height: 100%;
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  height: 11em;
+  width: 30em;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10em;
+  font-family: 'Norse-Bold';
+  & img {
+    height: 9em;
+  }
+  & span {
+    font-weight: 800;
+    font-size: 5em;
+  }
+}
+
+.form-container{
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px 0;
+  & > *{
+    margin-left: 25px;
+  }
+}
+
+.paragraph{
+  width: 45%;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fieldset{
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.inputs-container{
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 15em);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 8em;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    & label {
+      font-size: 1em;
+    }
+    & > input{
+      border: 0;
+      border: 0.5px solid #E5E7EB;
+      height: 2.5em;
+      border-radius: 8px;
+      padding-left: 1em;
+    }
+    & > input:valid{
+      border: 1px solid lightblue;
+    }
+    & > input:focus{
+      border: 1px solid lightblue;
+      box-shadow: 5px 5px #ccc;
+    }
+    & > input:invalid{
+      border: 1px solid red;
+    }
+  }
+}
+
+.footer {
+  font-size: 18px;
+  & button {
+    border: 0;
+    background-color: #596D48;
+    color: whitesmoke;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  & a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}

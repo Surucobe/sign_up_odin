@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./odin-lined.png" type="image/x-icon">
+  <title>Odin - Sign Up Page</title>
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div class="main">
+    <div class="splash-bg">
+      <div class="logo">
+        <img src="./odin-lined.png" alt="odin project logo">
+        <span>ODIN</span>
+      </div>
+    </div>
+    <div class="form-container">
+      <form action="">
+        <div class="paragraph">
+          <p>This is not a real online service! You know you need something like this in your life to help you realizeyour deepest dreams.<br>Sign up now to get started</p>
+          <span><br>You know you want to.</span>
+        </div>
+        <div class="fieldset">
+          <h3>Let's do this!</h3>
+          <div class="inputs-container">
+            <div>
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" name="first_name" id="first_name">
+            </div>
+            <div>
+              <label for="">
+                LAST NAME
+              </label>
+              <input type="text" id="last_name" name="last_name">
+            </div>
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" for="email" name="email">
+            </div>
+            <div>
+              <label for="phone_number">PHONE NUMBER</label>
+              <input type="text" name="phone_number" id="phone_number">
+            </div>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input required class="error" type="password" id="password" name="password">
+            </div>
+            <div>
+              <label for="password_confirmation">CONFIRM PASSWORD</label>
+              <input required class="error" type="password" id="password_confirmation" name="password_confirmation">
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button>
+            Create Account
+          </button>
+          <p>Already have an Account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
