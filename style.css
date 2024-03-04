@@ -17,7 +17,7 @@ body{
 /* TODO: averiguar como alejar la imagen */
 .splash-bg{
   height: 100%;
-  background-image: url(./background.jpg);
+  background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,6 +70,7 @@ form {
   background-color: #fff;
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 25px 0;
   padding-left: 40px;
   display: flex;
   flex-direction: column;
@@ -78,6 +79,7 @@ form {
 }
 
 .inputs-container{
+  position: relative;
   height: 100%;
   display: grid;
   align-items: center;
@@ -110,6 +112,13 @@ form {
   }
 }
 
+.help-text{
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  bottom: -18px;
+}
+
 .footer {
   font-size: 18px;
   & button {
@@ -118,7 +127,7 @@ form {
     color: whitesmoke;
     border-radius: 8px;
     font-weight: 600;
-    padding: 10px 25px;
+    padding: 12px 40px;
     cursor: pointer;
     margin-bottom: 20px;
   }
@@ -126,6 +135,6 @@ form {
     text-decoration: none;
     color: #596D48;
     font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Norse-Bold', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 }
